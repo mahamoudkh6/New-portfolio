@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+:root {
+  --background-color: #efe7e5;
+  --text-color: black;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+p {
+  line-height: 25px;
+}
+
+.navbar second-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6%;
+}
+
+.navbar second-navbar ul {
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+  list-style-type: none;
+  font-weight: 500;
+}
+.navbar second-navbar li {
+  position: relative;
+  margin-left: 40px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.navbar second-navbar li span {
+  position: absolute;
+  top: -5px;
+  right: -28px;
+}
+
+
+
+
+.container{
+    margin: 4%;
+
+}
+
+
+
+header {
+  margin: 0%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+header .header-left {
+  flex: 6;
+  margin-right: 50px;
+}
+header .header-left small {
+  font-weight: bold;
+  display:flex;
+  align-items:center;
+}
+header .header-left h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-top:15px;
+}
+header .header-left .links {
+  margin-top: 80px;
+}
+header .header-left .links a {
+  text-decoration:none;
+  color:inherit;
+  position: relative;
+  margin-right: 40px;
+  font-weight: bold;
+}
+header .header-left .links a span {
+  position: absolute;
+  top: -5px;
+  right: -28px;
+}
+header .header-right {
+  flex: 5;
+}
+header .header-right img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about {
+    margin: 1%;
+  margin-top: 150px;
+}
+.about .signature {
+  width: 30%;
+  background-color: #efe7e5;
+}
+.about p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.images {
+  margin-top: 60px;
+}
+.images .image-card {
+  display:flex;
+  align-items:center;
+  margin-bottom: 60px;
+}
+.images .image-card .image-left {
+  margin-right: 40px;
+}
+.images .image-card .image-left img {
+  height: 200px;
+  width: 400px;
+}
+
+footer {
+  margin-top: 100px;
+}
+footer p {
+  font-size: 15px;
+}
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%; /* Ajout de cette ligne */
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.navbar .profile h1 {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar ul li:hover {
+    border-bottom-color: #000;
+}
+
+
+
+
+.projects-section {
+    margin-top: 6%;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+
+
+
+.projects-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+	/* font-size: 3vw; */
+    font-size: 20px;
+}
+
+.projects-section .projects {
+	display: flex;
+}
+
+.projects-section .projects {
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacement uniforme entre les éléments */
+    width: calc(100% - 8%); /* Largeur égale à 100% moins la marge de 4% de chaque côté */
+    margin: 0 auto; /* Centre les éléments */
+}
+
+.projects-section .project {
+	margin-right: 20px;
+	max-width: 195px;
+}
+
+.projects-section .project h4 {
+    font-family: 'Times New Roman', Times, serif;
+	margin: 0;
+}
+
+.projects-section .project .description {
+	font-size: 10px;
+}
+.projects-section .project .dates {
+	font-size: 13px;
+	color: rgb(145, 145, 145);
+}
+
+.projects-section h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px; /* Taille du titre "Projets réalisés" */
+}
+
+.projects-section .project h4 {
+    font-size: 24px; /* Taille des titres de projets */
+}
+
+.projects-section .project p {
+    font-size: 18px; /* Taille du texte des descriptions */
+}
+
+.projects-section .project .dates {
+    font-size: 14px; /* Taille du texte des dates */
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 880px) {
+  .images .image-card {
+    flex-wrap:wrap;
+  }
+}
+
+@media screen and (max-width: 621px) {
+  header {
+    flex-direction: column-reverse
+  }
+  header .header-left {
+    margin-right: 0;
+  }
+  header .header-right {
+    margin-bottom: 40px;
+  }
+  header .header-right img {
+    width: 250px;
+  }
+
+  .images .image-card .image-left img {
+    width: 100%;
+  }
+}
